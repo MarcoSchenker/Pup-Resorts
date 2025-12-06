@@ -1,0 +1,92 @@
+.register-main-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.register-form-container {
+    position: relative;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5% 10% 0% 10%;
+    overflow-y: scroll;
+}
+
+.register-small-logo {
+    width: 188px;
+    height: 110px;
+    margin-bottom: 50px;
+    display: block;
+}
+.register-form-wrapper {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 64px;
+}
+.left-image{
+    display: flex;
+    width: 100%;
+    background-image: url('../../assets/register-image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.register-form-wrapper > * {
+    width: 100%;
+}
+
+.register-buttons-container {
+    width: 100%;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 8px;
+}
+
+.register-buttons-container .Register-Button,
+.register-buttons-container .Register-login-Button {
+    width: 100%;
+
+}
+
+.Register-Button:hover {
+    background: #E3A200;
+}
+
+.form-message {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto 16px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+.form-message-error {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto 16px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    color: var(--error-400)
+}
+
+.register-inputs-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

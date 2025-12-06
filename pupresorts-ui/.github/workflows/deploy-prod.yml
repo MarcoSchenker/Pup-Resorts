@@ -1,0 +1,32 @@
+name: Upload To Azure Blob Storage
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+        env:
+          VITE_BACKEND_URL: https://api.pup-resort.com
+
+      - uses: bacongobbler/azure-blob-storage-upload@main
+        with:
+          source_dir: dist
+          container_name: $web
+          connection_string: ${{ secrets.ConnectionString }}
+          overwrite: 'true'

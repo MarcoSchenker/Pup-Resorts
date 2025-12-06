@@ -1,0 +1,58 @@
+.dog-card-container {
+    display: flex;
+    flex-direction: column;
+    width: 262px;
+    padding-bottom: 8px;
+    border: 1px solid var(--primary-500);
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px 0px var(--grey-300);
+    overflow: hidden;
+}
+
+.dog-card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 188px;
+    position: relative;
+    overflow: hidden;
+}
+
+.dog-card-img{
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.IconDog {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    color: var(--primary-500);
+}
+
+.dog-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px 16px 0 16px;
+    border-top: 1px solid var(--primary-500);
+}
+
+.dog-name{
+    color: var(--primary-500);
+    margin-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dog-card-buttons-container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+

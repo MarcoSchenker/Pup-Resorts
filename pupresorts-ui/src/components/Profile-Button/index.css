@@ -1,0 +1,35 @@
+.profile-button-container {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: var(--primary-shade);
+    border-radius: 8px;
+    width: 100%;
+    justify-content: space-between
+}
+
+.profile-button-initials-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-600);
+    padding: 8px;
+    border-radius: 50%;
+    color: var(--white);
+}
+
+.logout-btn {
+    cursor: pointer;
+    background: transparent;
+    &:hover{
+        opacity: .85;
+    }
+}
+
+.profile-button-container.compressed {
+    flex-direction: column;
+    gap: 28px;
+    padding: 8px
+}
+
+

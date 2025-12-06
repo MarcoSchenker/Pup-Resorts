@@ -1,0 +1,19 @@
+import React from 'react';
+
+import type {IconProps} from "../utils/types.ts";
+
+export const IconTick: React.FC<IconProps> = ({size, color})  => {
+    return (
+        <svg
+            width={size}
+            height={size}
+            viewBox="0 0 24 24"
+            fill={color}
+            xmlns="http://www.w3.org/2000/svg">
+
+            <path d="M12 0C5.388 0 0 5.388 0 12C0 18.612 5.388 24 12 24C18.612 24 24 18.612 24 12C24 5.388 18.612 0 12 0ZM17.736 9.24L10.932 16.044C10.764 16.212 10.536 16.308 10.296 16.308C10.056 16.308 9.828 16.212 9.66 16.044L6.264 12.648C5.916 12.3 5.916 11.724 6.264 11.376C6.612 11.028 7.188 11.028 7.536 11.376L10.296 14.136L16.464 7.968C16.812 7.62 17.388 7.62 17.736 7.968C18.084 8.316 18.084 8.88 17.736 9.24Z"/>
+
+        </svg>
+
+    );
+}

@@ -1,0 +1,26 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Execute remote SSH commands using password
+        uses: webfactory/ssh-agent@v0.9.1
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Make git pull and rebuild containers
+        run: |
+          ssh -o StrictHostKeyChecking=no pupresortback@158.23.161.179 << 'EOF'
+          sudo docker-compose down
+          cd pupresort/pupresorts-back/
+          git checkout main
+          git pull
+          sudo docker-compose up --build -d
+          EOF
+        shell: bash
+

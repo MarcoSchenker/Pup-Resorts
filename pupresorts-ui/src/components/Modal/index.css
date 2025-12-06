@@ -1,0 +1,49 @@
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(17, 24, 39, 0.55);
+    display: grid;
+    place-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    width: fit-content;
+    background: var(--white);
+    border-radius: 20px;
+    padding: 32px 40px 32px 40px;
+    gap: 24px;
+    position: relative;
+    text-align: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    transition: background 0.2s ease;
+}
+
+.modal-close:hover {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.modal-title {
+    color: var(--black);
+}
+
+.modal-subtitle {
+    margin-top: 8px;
+    color: var(--black);
+}
+
+.modal-buttons-container {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}

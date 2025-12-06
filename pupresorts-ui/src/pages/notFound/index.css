@@ -1,0 +1,28 @@
+
+.general-div-NotFound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.NotFound-Image{
+    width: 506px;
+    height: 506px;
+    margin-top: 70px;
+}
+.text-NotFound{
+   gap: 8px;
+}
+h4{
+    font-weight: var(--fw-bold);
+    text-align: center;
+}
+.NotFound-button {
+    width: 10%;
+    height: 40px;
+}
+
+

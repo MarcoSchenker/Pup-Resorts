@@ -1,0 +1,101 @@
+.MuiDataGrid-root {
+    background: var(--white) !important;
+    border: none !important;
+}
+
+.MuiDataGrid-columnHeaders {
+    background: var(--white) !important;
+    position: relative;
+}
+
+.MuiDataGrid-columnHeaders::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+    right: 12px;
+    height: 1px;
+    background-color: var(--primary-500);
+}
+
+.MuiDataGrid-columnHeader {
+    border-bottom: none !important;
+    padding: 0 12px !important;
+}
+
+.MuiDataGrid-columnSeparator {
+    display: none !important;
+}
+
+.MuiDataGrid-columnHeaderTitle {
+    font-weight: var(--fw-medium) !important;
+    font-size: var(--fs-16) !important;
+    color: var(--black) !important;
+}
+
+.MuiDataGrid-columnHeadersInner {
+    border-bottom: none !important;
+}
+
+.MuiDataGrid-row {
+    border-bottom: none !important;
+    border-top: none !important;
+    position: relative;
+}
+
+.MuiDataGrid-row::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+    right: 12px;
+    height: 1px;
+    background-color: var(--primary-500);
+}
+
+.MuiDataGrid-cell {
+    font-size: var(--fs-14) !important;
+    font-weight: var(--fw-regular) !important;
+    padding: 0 12px !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.MuiDataGrid-footerContainer {
+    border-top: none !important;
+    background: var(--white) !important;
+    min-height: 56px !important;
+}
+
+.MuiTablePagination-displayedRows {
+    color: var(--black) !important;
+    font-size: var(--fs-14) !important;
+}
+
+/* Pagination buttons */
+.MuiTablePagination-actions .MuiIconButton-root {
+    color: var(--primary-500) !important;
+}
+
+.MuiTablePagination-actions .MuiIconButton-root:hover {
+    color: var(--primary-300) !important;
+}
+
+.MuiTablePagination-actions .MuiIconButton-root.Mui-disabled {
+    color: var(--grey-500) !important;
+}
+
+.cards-grid {
+    width: 100%;
+    display: grid;
+    grid-template-column: repeat(auto-fill, minmax(260px, 0));
+    align-items: stretch;
+}
+
+@media (max-width: 900px) {
+    .cards-grid {
+        gap: 16px;
+    }
+}

@@ -1,0 +1,19 @@
+.stepper {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+.step-connector {
+    display: flex;
+    height: 4px;
+    border-radius: 8px;
+    background: var(--grey-500);
+    min-width: 200px;
+}
+
+.step-connector.on {
+    background: var(--primary-500);
+}

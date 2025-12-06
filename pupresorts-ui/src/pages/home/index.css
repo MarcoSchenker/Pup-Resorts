@@ -1,0 +1,42 @@
+.home-general-div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.home-title{
+    font-size: var(--fs-48);
+    font-weight: var(--fw-medium);
+    color: var(--primary-500);
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+.home-form-and-cards-div{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 8px;
+    background: var(--white);
+    border-radius: 16px;
+    border: 1px solid var(--primary-500);
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cards-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 280px;
+    flex-shrink: 0;
+}
+.home-content-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 24px;
+}

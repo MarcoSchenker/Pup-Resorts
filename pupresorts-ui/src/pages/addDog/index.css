@@ -1,0 +1,136 @@
+.dog-page {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    padding: 0 16px;
+}
+
+.dog-title-wrap {
+    width: 100%;
+    max-width: 920px;
+    margin-bottom: 56px;
+}
+
+.title-1 {
+    font-size: 48px;
+    font-weight: var(--fw-medium);
+    line-height: 1.2;
+    color: var(--primary-500);
+    text-align: left;
+    width: 100%;
+}
+
+.dog-container {
+    max-width: 920px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dog-form-grid {
+    max-width: 732px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 16px 60px;
+
+}
+
+.form-row2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+}
+.form-label { font-size: 14px; color: var(--font-primary); }
+
+.form-input{
+    height: 44px;
+    border: 1px solid var(--grey-300);
+    border-radius: 10px;
+    background: var(--white);
+    color: var(--font-primary);
+    padding: 0 14px;
+}
+
+.select-wrap{
+    border: 1px solid var(--grey-300);
+    border-radius: 10px;
+    background: var(--white);
+    height: 44px;
+}
+
+.form-select{
+    border: 0;
+    background: transparent;
+    height: 44px;
+    width: 100%;
+    padding: 0 28px;
+    transform: translateX(-14px);
+}
+
+.select-wrap:has(.form-select:focus){
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary-500) 25%, transparent);
+    border-color: var(--primary-500);
+}
+
+.form-select:has(option[value=""]:checked) {
+    color: var(--grey-500);
+}
+
+.form-select option[value=""] {
+    color: var(--grey-500);
+}
+
+.form-input:focus,
+.form-select:focus {
+    outline: none;
+}
+
+.form-error { color: var(--error-400); font-size: 12px; }
+
+.form-actions {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.form-actions .fulfilled:hover { background: var(--primary-600); }
+
+@media (max-width: 768px) {
+    .title-1 { font-size: 32px; }
+    .booking-form-grid { grid-template-columns: 1fr; }
+    .total-inline { gap: 8px; }
+    .total-title, .total-amount { font-size: 18px; }
+}
+.ImageUploader-container{
+    flex-direction: column;
+}
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    flex: 1;
+}
+.form-inputs-health{
+    max-width: 732px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 60px;
+
+}

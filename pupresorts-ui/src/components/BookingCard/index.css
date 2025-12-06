@@ -1,0 +1,73 @@
+.booking-card-container {
+    display: flex;
+    flex-direction: column;
+    width: 262px;
+    height: 344px;
+    padding-bottom: 8px;
+    border: 1px solid var(--primary-500);
+    border-radius: 16px;
+    box-shadow: 0 4px 4px 0 var(--grey-500);
+    overflow: hidden;
+    justify-content: center;
+    gap: 24px;
+}
+
+.booking-card--empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-empty-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
+.booking-empty-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.dog-name {
+    color: var(--primary-500);
+    margin-bottom: 8px;
+}
+
+.booking-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-card-container .booking-info .text-with-icon-text {
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-16)
+}
+.booking-info {
+    font-weight: var(--fw-regular);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.booking-info-time {
+    margin-bottom: 8px;
+}
+
+.booking-card-button-container {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Repeat-Button {
+    width: fit-content;
+}

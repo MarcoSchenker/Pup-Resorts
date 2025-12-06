@@ -1,0 +1,20 @@
+.my-dogs-general-div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.my-dogs-title{
+    font-size: var(--fs-48);
+    font-weight: var(--fw-medium);
+    color: var(--primary-500);
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+
+.my-dogs-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}

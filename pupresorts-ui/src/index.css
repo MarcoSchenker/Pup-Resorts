@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+}
+
+/* Headings */
+h1 { font-size: var(--fs-56); font-weight: var(--fw-regular); }
+h2 { font-size: var(--fs-48); font-weight: var(--fw-bold); }
+h3 { font-size: var(--fs-32); font-weight: var(--fw-regular); }
+h4 { font-size: var(--fs-28); font-weight: var(--fw-regular); }
+h5 { font-size: var(--fs-24); font-weight: var(--fw-medium); }
+h6 { font-size: var(--fs-18); font-weight: var(--fw-bold); }
+
+.body-1 { font-size: var(--fs-16); font-weight: var(--fw-light); }
+.body-1-medium { font-size: var(--fs-16); font-weight: var(--fw-medium); }
+.body-1-bold { font-size: var(--fs-16); font-weight: var(--fw-semibold); }
+.body-2 { font-size: var(--fs-14); font-weight: var(--fw-regular); }
+.body-2-bold{ font-size: var(--fs-14); font-weight: var(--fw-semibold); }
+.body-3 { font-size: var(--fs-12); font-weight: var(--fw-regular); }
+.body-3-bold { font-size: var(--fs-12); font-weight: var(--fw-semibold); }
+
+:root {
+  /* Typography */
+  --font-primary: "Fredoka", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji", sans-serif;
+  --font-secondary: 'Playfair Display', serif;
+  --font-mono: 'Fira Code', monospace;
+
+  /* Weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Sizes */
+  --fs-12: 12px;
+  --fs-14: 14px;
+  --fs-16: 16px;
+  --fs-18: 18px;
+  --fs-20: 20px;
+  --fs-24: 24px;
+  --fs-28: 28px;
+  --fs-32: 32px;
+  --fs-48: 48px;
+  --fs-56: 56px;
+
+  /* Primary Color Palette */
+  --primary-100: #FBD66C;
+  --primary-200: #FACF54;
+  --primary-300: #F9C93B;
+  --primary-400: #F9C223;
+  --primary-500: #F8BB0A;
+  --primary-600: #DFA809;
+  --primary-700: #C69608;
+  --primary-800: #AE8307;
+  --primary-900: #957006;
+  --primary-shade: #FFF4E2;
+
+  /* Grey Color Palette */
+  --grey-100: #F4F4F4;
+  --grey-300: #CBCFD3;
+  --grey-500: #B8BCC1;
+  --grey-700: #747F86;
+  --grey-900: #1C2D38;
+
+  /* Background Colors */
+  --page-bg: #FEFEFE;
+  --sidebar-bg: #FDFDFD;
+
+  /* Error and Success Colors */
+  --error-100: #F6E1DF;
+  --error-400: #DA786B;
+  --success-100: #DDF3E2;
+  --success-500: #70BE7C;
+
+  /* Black and White */
+  --black: #0C1012;
+  --white: #FFFFFF;
+}
+
+.Toastify__toast {
+    font-family: var(--font-primary) !important;
+}
